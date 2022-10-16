@@ -4,11 +4,11 @@
 //
 // @author			zumwani
 // @namespace       http://github.com/zumwani
-// @downloadURL		https://raw.github.com/zumwani/firefox-tweaks/main/zoro-title.js
+// @downloadURL		https://raw.github.com/zumwani/firefox-tweaks/main/userscript/zoro-title.js
 // @match           https://*.zoro.to/watch/*
 //
 // @version         1.0
-// @updateURL		https://raw.github.com/zumwani/firefox-tweaks/zoro-title.json
+// @updateURL		https://raw.github.com/zumwani/firefox-tweaks/userscript/zoro-title.json
 //
 // @run-at			document-start
 // @unwrap

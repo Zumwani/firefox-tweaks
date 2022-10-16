@@ -4,11 +4,11 @@
 //
 // @author			zumwani
 // @namespace       http://github.com/zumwani
-// @downloadURL		https://raw.github.com/zumwani/firefox-tweaks/main/youtube-title.js
+// @downloadURL		https://raw.github.com/zumwani/firefox-tweaks/main/userscript/youtube-title.js
 // @match           https://*.youtube.com/*
 //
 // @version         1.0
-// @updateURL		https://raw.github.com/zumwani/firefox-tweaks/youtube-title.json
+// @updateURL		https://raw.github.com/zumwani/firefox-tweaks/userscript/youtube-title.json
 //
 // @run-at			document-start|document-end
 // @unwrap
