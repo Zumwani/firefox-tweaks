@@ -1,7 +1,7 @@
 ## Userscripts:
 * **netflix-title**<br/>
   Adds show titles on netflix.
-* **zoro.to**<br/>
+* **zoro.to-title**<br/>
 Fixes titles on zoro.to.<br/>
 Format: '{ShowTitle} [10/12]'.
 * **youtube-title**<br/>
