@@ -1,7 +1,23 @@
+/*Hides tab bar, title bar, sidebar header, and favorites icon in url bar*/
 #TabsToolbar, #titlebar, #sidebar-header, #star-button-box {
   display: none;
 }
 
+/*Hides status bar, using addon to display urls as tooltips instead*/
+#statuspanel {
+  display: none !important;
+}
+
+/*Works better with sidebery*/
+#sidebar-box {
+  min-width: 30px;
+}
+
+/*
+Nav bar
+Hide and only show on activate
+Center
+*/
 #navigator-toolbox-background {
   position: absolute;
   display: inline;
@@ -40,8 +56,4 @@
 toolbarbutton {
   padding-left: 5px !important;
   padding-right: 5px !important;
-}
-
-#sidebar-box {
-  min-width: 30px;
 }
