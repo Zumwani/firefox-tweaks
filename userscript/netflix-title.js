@@ -10,11 +10,11 @@
 // @version         1.0
 // @updateURL		https://raw.github.com/zumwani/firefox-tweaks/userscript/netflix-title.json
 //
-// @run-at			document-start|document-end
+// @run-at			document-start
 // @unwrap
 // ==/UserScript==
 
-const elements = [ "h2.ltr-1mdnz4d", "h2.ltr-1gtjs2y", ".medium.ltr-er76rf > h4" ];
+const elements = [ "h2.ltr-1mdnz4d", "h2.ltr-1gtjs2y", ".medium.ltr-er76rf", "h2.ltr-2cum3e" ];
 const ignore = [];
 
 setInterval(() => {
