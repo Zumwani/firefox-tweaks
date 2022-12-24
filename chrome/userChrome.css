@@ -10,7 +10,7 @@
 
 /*Works better with sidebery*/
 #sidebar-box {
-  min-width: 30px;
+  min-width: 30px !important;
 }
 
 /*
@@ -50,10 +50,14 @@ Center
 #nav-bar {
   border-radius: 6px;
   padding-left: 0px;
-  left: -20px;
 }
 
 toolbarbutton {
   padding-left: 5px !important;
   padding-right: 5px !important;
+}
+
+/**/
+browser[blank], browser[pendingpaint] {
+	opacity: 1 !important;
 }

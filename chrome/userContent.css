@@ -1,0 +1,7 @@
+.update-badge {
+  display: none
+}
+
+.PinnedTab[data-updated] .fav > img {
+  mask: none
+}
