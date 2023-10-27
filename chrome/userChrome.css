@@ -18,15 +18,15 @@ Nav bar
 Hide and only show on activate
 Center
 */
-#navigator-toolbox-background {
+#navigator-toolbox {
   position: absolute;
   display: inline;
+  min-width: fit-content;
   max-width: 66vw;
-  min-width: 66vw;
   height: fit-content;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 20%;
   right: 0;
   margin: auto;
   margin-top: 20vh;
@@ -37,14 +37,9 @@ Center
   transition: opacity 0.25s ease;
 }
 
-#navigator-toolbox-background:focus-within {
+#navigator-toolbox:focus-within {
   opacity: 1;
   pointer-events: all;
-}
-
-#navigator-toolbox {
-  width: 100%;
-  border-radius: 6px;
 }
 
 #nav-bar {
