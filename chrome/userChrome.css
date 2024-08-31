@@ -11,6 +11,8 @@
 /*Works better with sidebery*/
 #sidebar-box {
   min-width: 30px !important;
+  width: 131px;
+  max-width: 250px;
 }
 
 /*
@@ -26,7 +28,7 @@ Center
   height: fit-content;
   top: 0;
   bottom: 0;
-  left: 20%;
+  left: 10%;
   right: 0;
   margin: auto;
   margin-top: 20vh;
@@ -40,6 +42,26 @@ Center
 #navigator-toolbox:focus-within {
   opacity: 1;
   pointer-events: all;
+}
+
+/* Disable modifications of nav bar when in customization mode */
+#main-window[customizing=""] #navigator-toolbox {
+  position: static !important;
+  display: block !important;
+  min-width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  z-index: auto !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+  transition: none !important;
 }
 
 #nav-bar {
