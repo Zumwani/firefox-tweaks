@@ -1,6 +1,6 @@
 /*Hides tab bar, title bar, sidebar header, and favorites icon in url bar*/
 #TabsToolbar, #titlebar, #sidebar-header, #star-button-box {
-  display: none;
+  display: none !important;
 }
 
 /*Hides status bar, using addon to display urls as tooltips instead*/
@@ -11,8 +11,8 @@
 /*Works better with sidebery*/
 #sidebar-box {
   min-width: 30px !important;
-  width: 131px;
-  max-width: 250px;
+  //width: 131px !important;
+  max-width: 250px !important;
 }
 
 /*
@@ -21,27 +21,36 @@ Hide and only show on activate
 Center
 */
 #navigator-toolbox {
-  position: absolute;
-  display: inline;
-  min-width: fit-content;
-  max-width: 66vw;
-  height: fit-content;
-  top: 0;
-  bottom: 0;
-  left: 10%;
-  right: 0;
-  margin: auto;
-  margin-top: 20vh;
-  z-index: 1;
-  border-radius: 6px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
+  position: absolute !important;
+  //display: inline !important;
+  min-width: fit-content !important;
+  max-width: 66vw !important;
+  height: fit-content !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
+  margin-top: 20vh !important;
+  z-index: 9999 !important;
+  border-radius: 6px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.25s ease !important;
 }
 
 #navigator-toolbox:focus-within {
-  opacity: 1;
-  pointer-events: all;
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+
+#urlbar {
+  opacity: 0 !important;
+}
+
+#navigator-toolbox:focus-within #urlbar {
+  opacity: 1 !important;
+  pointer-events: all !important;
 }
 
 /* Disable modifications of nav bar when in customization mode */
@@ -65,16 +74,9 @@ Center
 }
 
 #nav-bar {
-  border-radius: 6px;
-  padding-left: 0px;
+  border-radius: 6px !important;
 }
 
-toolbarbutton {
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-}
-
-/**/
 browser[blank], browser[pendingpaint] {
 	opacity: 1 !important;
 }
