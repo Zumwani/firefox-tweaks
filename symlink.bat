@@ -1,7 +1,6 @@
 @echo off
-for /D %%G in ("%AppData%\Mozilla\Firefox\Profiles\*") DO ( 
-
-rmdir "%AppData%\Mozilla\Firefox\Profiles\%%~nxG\chrome"
-mklink /d "%AppData%\Mozilla\Firefox\Profiles\%%~nxG\chrome" "%cd%\chrome"
-
+for /D %%G in ("%AppData%\Mozilla\Firefox\Profiles\*") DO (
+    rmdir /s /q "%%G\chrome"
+    mklink /d "%%G\chrome" "%cd%\chrome"
+    start "" "%%G"
 )
