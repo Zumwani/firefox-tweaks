@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Discord Icon Tracker",
+  "version": "1.0",
+  "description": "Tracks the icon of the first open Discord tab and injects it into another page.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webNavigation"
+  ],
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://localhost/*",
+        "*://127.0.0.1/*",
+        "*://[::1]/*"
+      ],
+      "js": [ "content_script.js" ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "discord-icon-tracker@example.com"
+    }
+  }
+}
