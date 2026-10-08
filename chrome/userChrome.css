@@ -8,11 +8,32 @@
   display: none !important;
 }
 
+#sidebar-panel-header {
+  display: none;
+}
+
 /*Works better with sidebery*/
 #sidebar-box {
   min-width: 30px !important;
-  //width: 131px !important;
   max-width: 350px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border-top-width: 0px !important;;
+}
+
+#sidebar-splitter {
+    min-width: 6px !important;
+    width: 6px !important;
+    margin-inline: -3px !important;
+    background: transparent !important;
+    border: none !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.browserContainer {
+  border-radius: 0 !important;
+  border: none !important;
 }
 
 /*
@@ -22,7 +43,6 @@ Center
 */
 #navigator-toolbox {
   position: absolute !important;
-  //display: inline !important;
   min-width: fit-content !important;
   max-width: 66vw !important;
   height: fit-content !important;
@@ -37,6 +57,14 @@ Center
   opacity: 0 !important;
   pointer-events: none !important;
   transition: opacity 0.25s ease !important;
+  background-color: #171519;
+  min-width: fit-content !important;
+  max-width: 66vw !important;
+}
+
+#navigator-toolbox {
+  //opacity: 1 !important;
+  //pointer-events: all !important;
 }
 
 #navigator-toolbox:focus-within {
@@ -79,4 +107,24 @@ Center
 
 browser[blank], browser[pendingpaint] {
 	opacity: 1 !important;
+}
+
+:root {
+    --chrome-block-radius: 0px !important;
+    --chrome-window-gap: 0px !important;
+}
+
+#sidebar-box,
+#sidebar,
+#webext-panels-stack,
+#webext-panels-browser {
+    border-radius: 0 !important;
+    clip-path: none !important;
+    mask: none !important;
+}
+
+#sidebar {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
 }
